@@ -648,7 +648,7 @@ code {
   }
   /* 让每个轮播 item 本身只有容器宽度的 80%，并居中 */
   #results-carousel .item {
-    max-width: 80%;
+    max-width: 60%;
     margin: 1rem auto;   /* 水平居中 */
   }
 
