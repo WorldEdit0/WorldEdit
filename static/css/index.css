@@ -269,7 +269,11 @@ body {
   transition: var(--transition);
   border: 1px solid var(--border-color);
 }
-
+  /* 让每个轮播 item 本身只有容器宽度的 80%，并居中 */
+#results-carousel .item {
+  max-width: 60%;
+  margin: 1rem auto;   /* 水平居中 */
+}
 .results-carousel .item:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
@@ -645,11 +649,6 @@ code {
   .results-carousel .item {
     margin: 0.5rem;
     padding: 1rem;
-  }
-  /* 让每个轮播 item 本身只有容器宽度的 80%，并居中 */
-  #results-carousel .item {
-    max-width: 60%;
-    margin: 1rem auto;   /* 水平居中 */
   }
 
   .teaser .hero-body {
