@@ -749,5 +749,135 @@ a:focus {
   }
 }
 
+/* =================== WorldEdit Leaderboard =================== */
+
+.method-section .title.is-3 {
+  font-family: 'Google Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* 外层容器：控制宽度和滚动 */
+.leaderboard-container {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+/* 表格整体卡片风格 */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+  font-size: 0.9rem;
+}
+
+/* 表头 */
+.leaderboard-table thead {
+  background: #f8fafc;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.leaderboard-table th:first-child,
+.leaderboard-table td:first-child {
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+/* 奇偶行背景 + hover 效果 */
+.leaderboard-table tbody tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: #e5f2ff;
+  transition: background 0.15s ease-out;
+}
+
+/* 排名列稍微粗一点 */
+.leaderboard-table tbody td:first-child {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* 模型名字左对齐，显眼一点 */
+.leaderboard-table tbody td:nth-child(2) {
+  text-align: left;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+/* 组织 logo */
+.org-logo {
+  height: 22px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  filter: saturate(1.1);
+}
+
+/* sortable 表头样式，和原 leaderboard 一致 */
+.sortable-header {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  font-weight: 600;
+  color: #0f172a;
+  font-family: 'Google Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.sortable-header .sort-indicator {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.sortable-header.active {
+  color: #2563eb;
+}
+
+.sortable-header.active .sort-indicator {
+  color: #2563eb;
+}
+
+/* 分数列统一样式 */
+.leaderboard-table tbody td:nth-child(n + 4) {
+  font-variant-numeric: tabular-nums;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1f2933;
+}
+
+/* Avg 最佳高亮 */
+.best-score {
+  font-weight: 700;
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+/* 在窄屏上稍微缩小一点字 */
+@media (max-width: 768px) {
+  .leaderboard-table {
+    font-size: 0.8rem;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .leaderboard-table th:first-child,
+  .leaderboard-table td:first-child {
+    padding-left: 0.8rem;
+  }
+}
+
 
 
