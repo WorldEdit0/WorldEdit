@@ -189,7 +189,90 @@
 </section>
 <!-- End image carousel -->
 
+<!-- Begin Leadboard-->
+<section class="hero is-small is-light method-section">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">WorldEdit Leaderboard</h2>
 
+      <div id="worldedit-leaderboard" class="leaderboard-container">
+        <table class="leaderboard-table">
+          <thead>
+            <tr>
+              <th data-column-index="0" class="sortable-header">Rank<span class="sort-indicator"></span></th>
+              <th data-column-index="1" class="sortable-header">Model<span class="sort-indicator"></span></th>
+              <th data-column-index="2" class="sortable-header">Org<span class="sort-indicator"></span></th>
+              <th data-column-index="3" class="sortable-header">Edit Consistency<span class="sort-indicator"></span></th>
+              <th data-column-index="4" class="sortable-header">Visual Quality<span class="sort-indicator"></span></th>
+              <th data-column-index="5" class="sortable-header">Instruct Following<span class="sort-indicator"></span></th>
+               <th data-column-index="6" class="sortable-header">Knowledge Plausibility<span class="sort-indicator"></span></th>
+              <th data-column-index="7" class="sortable-header active">Avg<span class="sort-indicator">▼</span></th>
+            </tr>
+          </thead>
+
+          <tbody id="leaderboard-body">
+            <!-- Row 1 -->
+            <tr>
+              <td>1</td>
+              <td>GPT-4o</td>
+              <td>
+               <td><img src="static/images/openai.png" alt="OpenAI" class="org-logo"></td>
+              </td>
+              <td>0.83</td>
+              <td>0.88</td>
+              <td>0.82</td>
+              <td>0.82</td>
+              <td class="best-score">0.84</td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+              <td>2</td>
+              <td>Nano-Banana</td>
+              <td>
+               <td><img src="static/images/google.png" alt="Google" class="org-logo"></td>
+              </td>
+              <td>0.80</td>
+              <td>0.86</td>
+              <td>0.79</td>
+              <td>0.82</td>
+              <td>0.82</td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr>
+              <td>3</td>
+              <td> SeedEdit-3.0</td>
+              <td>
+               <td><img src="static/images/bytedance.png" alt="Bytedance" class="org-logo"></td>
+              </td>
+              <td>0.77</td>
+              <td>0.82</td>
+              <td>0.75</td>
+              <td>0.78</td>
+              <td>0.82</td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr>
+              <td>4</td>
+              <td>WorldEdit</td>
+              <td>
+                <td><img src="static/images/世界.png" alt="WorldEdit" class="org-logo"></td>
+              </td>
+              <td>0.70</td>
+              <td>0.76</td>
+              <td>0.69</td>
+              <td>0.72</td>
+              <td>0.82</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</section>
   <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
