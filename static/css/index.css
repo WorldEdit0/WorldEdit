@@ -646,7 +646,12 @@ code {
     margin: 0.5rem;
     padding: 1rem;
   }
-  
+  /* 让每个轮播 item 本身只有容器宽度的 80%，并居中 */
+  #results-carousel .item {
+    max-width: 80%;
+    margin: 1rem auto;   /* 水平居中 */
+  }
+
   .teaser .hero-body {
     padding: 1rem;
   }
