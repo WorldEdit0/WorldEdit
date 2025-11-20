@@ -815,15 +815,6 @@ a:focus {
   color: #0f172a;
 }
 
-/* 组织 logo */
-.org-logo {
-  height: 22px;
-  width: auto;
-  display: inline-block;
-  vertical-align: middle;
-  filter: saturate(1.1);
-}
-
 /* sortable 表头样式，和原 leaderboard 一致 */
 .sortable-header {
   cursor: pointer;
